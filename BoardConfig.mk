@@ -140,6 +140,7 @@ TW_NO_SCREEN_BLANK := true
 TW_INCLUDE_FUSE_EXFAT := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_APEX := true
+TW_FRAMERATE := 60
 
 # Property Override
 TW_OVERRIDE_SYSTEM_PROPS := "ro.build.version.sdk"
