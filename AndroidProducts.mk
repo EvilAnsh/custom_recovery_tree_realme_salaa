@@ -3,9 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_nashc.mk
+    $(LOCAL_DIR)/twrp_salaa.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_nashc-user \
-    twrp_nashc-userdebug \
-    twrp_nashc-eng
+    twrp_salaa-user \
+    twrp_salaa-userdebug \
+    twrp_salaa-eng

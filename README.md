@@ -1,5 +1,5 @@
-# Device Tree for Realme 8 (nashc)
-![Realme 8](https://image05.realme.net/general/20210427/1619510447064.png)
+# Device Tree for Realme 7 (salaa)
+![Realme 7](https://fdn2.gsmarena.com/vv/pics/realme/realme-7-1.jpg)
 
 |Basic               |Spec Sheet                                                    |
 |--                  |--                                                            |
@@ -7,7 +7,7 @@
 |Chipset             |MediaTek MT6785 Helio G95                                     |
 |GPU                 |ARM Mali-G76 MC4                                              |
 |Memory              |4/6GB RAM                                                     |
-|Android Version     |11 to 12 (RUI2 to RUI3)                                               |
+|Android Version     |12 (RUI3)                                                     |
 |Storage             |64/128GB                                                      |
 
 ## Working Feature
@@ -24,7 +24,7 @@
 
 ## Notes
 - If you see error like, especially when you are in Stock ROM: `Failed to mount /partition_name (Invalid Argument)`, please ignore it for now. It was due to erofs as file-system of this device (and most of recent Realme devices)
-- Kernel Source: [Reame-Kernel-MT6785](https://github.com/nashc-dev/android_kernel_realme_mt6785)
+- Kernel Source: [Stormbreaker-Kernel-salaa](https://github.com/stormbreaker-project/kernel_realme_salaa)
        (...if you want to build recovery with Kernel Source.)
 
 
@@ -39,4 +39,4 @@
   - AdamsProStudio
   - Ivan Avetisov
 
-Telegram Community: https://t.me/Realme8Discussion
+Telegram Community: https://t.me/realme7global

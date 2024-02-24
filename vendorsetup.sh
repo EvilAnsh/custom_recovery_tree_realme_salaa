@@ -1,4 +1,4 @@
-FDEVICE="nashc"
+FDEVICE="salaa"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -22,14 +22,14 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export LC_ALL="C"
 
 	# Maintaining Info
-	export OF_MAINTAINER=Crypton
+	export OF_MAINTAINER=αиѕн
 	export FOX_VERSION=$(date +%y.%m.%d)
 	export FOX_BUILD_TYPE=Unofficial-Beta
 	
 	# Device Information
 	export FOX_ARCH=arm64
 	export FOX_VARIANT="A12.1"
-	export TARGET_DEVICE_ALT="RMX3085,RMX3085.ossi,qssi,oppo6785,RMX3085L1"
+	export TARGET_DEVICE_ALT="RMX2151,RMX2151L1,RMX2153L1,RMX2155L1,RMX2156L1,RMX2161L1,RMX2163L1,salaa,oppo6785"
 
 	# Funtions
 	export FOX_REPLACE_BUSYBOX_PS=1

@@ -2,7 +2,7 @@
 # Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 # SPDX-License-Identifier: Apache-2.0
 
-DEVICE_PATH := device/realme/nashc
+DEVICE_PATH := device/realme/salaa
 
 # Build Rules
 BUILD_BROKEN_DUP_RULES := true
@@ -28,17 +28,18 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX3085,RMX3085L1
+TARGET_OTA_ASSERT_DEVICE := RMX2151,RMX2151L1,RMX2153L1,RMX2155L1,RMX2156L1,RMX2161L1,RMX2163L1,salaa
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 134217728
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 102760448
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Pre-builts
+TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
@@ -64,8 +65,8 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 # Kernel (if using Source)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := $(TARGET_KERNEL_ARCH)
-TARGET_KERNEL_SOURCE := kernel/realme/nashc
-TARGET_KERNEL_CONFIG := lineage_defconfig
+TARGET_KERNEL_SOURCE := kernel/realme/salaa
+TARGET_KERNEL_CONFIG := salaa_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # Platform
@@ -142,9 +143,6 @@ TW_EXCLUDE_APEX := true
 
 # Property Override
 TW_OVERRIDE_SYSTEM_PROPS := "ro.build.version.sdk"
-
-# Version/Maintainer
-include $(DEVICE_PATH)/version.mk
 
 # Debugging Configs
 TWRP_INCLUDE_LOGCAT := true

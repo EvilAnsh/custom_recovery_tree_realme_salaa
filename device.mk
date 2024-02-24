@@ -2,7 +2,7 @@
 # Copyright (C) 2023 SebaUbuntu's TWRP Device Tree Generator
 # SPDX-License-Identifier: Apache-2.0
 
-LOCAL_PATH := device/realme/nashc
+LOCAL_PATH := device/realme/salaa
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
